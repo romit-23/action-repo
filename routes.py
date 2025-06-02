@@ -15,6 +15,7 @@ def api_github_msg():
             return json.dumps({'status': 'success', 'message': 'Data received successfully!'}), 200
         else:
             return json.dumps({'status': 'error', 'message': 'No data received!'}), 400
-        
+
+
 if __name__ == '__main__':
     app.run(debug=True)
